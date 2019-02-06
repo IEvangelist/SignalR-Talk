@@ -1,0 +1,13 @@
+theme: night
+eager-loading : true
+background : assets/binary-strings-black.jpg
+background-opacity : 15
+transition : convex
+logo : assets/signalr-logo.png
+remote-control: true
+remote-control-prevkey: 38
+remote-control-nextkey: 40
+theme-override : assets/styles.css
+published: false
+code-line-numbers : true
+footnote : "SignalR: To Chat and Beyond   •   davidpine.net   •   @davidpine7"
