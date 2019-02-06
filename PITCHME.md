@@ -1,10 +1,9 @@
 ---
 @size[3em](@css[signalr](SignalR))
 ## To Chat and Beyond
-
 ---
 
-<img class="me" src="assets/me-2.png" height="600" />
+<img class="me" src="assets/me.png" height="600" />
 
 @snap[south-west]
 [@css[twitter](@fa[twitter]) @davidpine7](https://twitter.com/davidpine7)
@@ -30,8 +29,24 @@
 
 ---
 
+# Protocols
+
+ - JSON (Text-Based)
+ - MessagePack (Binary)
+
+---
+
+# Transports
+
+ - WebSockets
+ - Server-Sent Events
+ - Long Polling
+ - ~~Forever Frame~~
+
+---
+
 # Thank you
-<img class="me" src="assets/me-2.png" height="450" />
+<img class="me" src="assets/me.png" height="450" />
 <br/>
 @snap[west]
 [@css[twitter](@fa[twitter]) @davidpine7](https://twitter.com/davidpine7)
