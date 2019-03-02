@@ -1,0 +1,16 @@
+Razor Pages (Instead of MVC)
+similar, but still Chat App
+More advanced than sample Chat App
+
+--------------------------------------------
+
+MessagePack + Streaming
+
+Twitter - Azure SignalR Server (ASP.NET Core)
+Twitter - Client (Angular)
+
+---------------------------------------------
+
+Blazor App
+Maybe Video Streaming + ASCII
+or maybe GPS + Map, etc?

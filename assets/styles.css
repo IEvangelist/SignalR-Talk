@@ -1,14 +1,27 @@
+:root {
+  --signalr: #00abec;
+}
+
 .signalr {
-  color: #00abec;
+  color: var(--signalr);
 }
 
 .reveal h1 {
-  color: #00abec;
+  color: var(--signalr);
 }
 
 .img-fit > img {
   width: 280px; 
 }
+
+.logo {
+  width: 120px;
+  padding: 10px;
+}
+
+  .logo > #signalr-svg {
+      fill: var(--signalr);
+  }
 
 img.mute {
   border: none !important;
