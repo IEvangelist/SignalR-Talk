@@ -36,7 +36,8 @@
  - WebSockets
  - Server-Sent Events
  - Long Polling
- - ~~Forever Frame~~
+
+> The best transport is automatically chosen based on server and client capabilities.
 
 ---?image=assets/hubs.jpg&size=contain
 
@@ -66,12 +67,14 @@
 
 # Summary
 
- - ASP.NET Core Razor Pages
- - VueJS
+ + Chat App (Much Improved)
+ + Razor Pages + VueJS
+ + JSON Protocol
+ + Azure SignalR
 
 ---
 
-# Performance
+# Perf
 
 <a href='aka.ms/aspnet/BenchMarks' target='_blank'>
 aka.ms/aspnet/BenchMarks
