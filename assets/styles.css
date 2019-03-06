@@ -6,6 +6,10 @@
   color: var(--signalr);
 }
 
+.no-bullets {
+  list-style-type: none !important;
+}
+
 .reveal h1 {
   color: var(--signalr);
 }
@@ -19,7 +23,7 @@
   padding: 10px;
 }
 
-  .logo > #signalr-svg {
+  .logo > .signalr-svg {
       fill: var(--signalr);
   }
 

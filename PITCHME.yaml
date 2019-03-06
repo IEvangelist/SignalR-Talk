@@ -9,5 +9,5 @@ remote-control-prevkey: 38
 remote-control-nextkey: 40
 theme-override : assets/styles.css
 published: false
-code-line-numbers : true
+
 footnote : "SignalR: To Chat and Beyond   •   davidpine.net   •   @davidpine7"
