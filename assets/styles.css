@@ -22,6 +22,7 @@
 .logo {
   width: 120px;
   padding: 10px;
+  padding-left: 60px;
 }
 
   .logo > .signalr-svg {
@@ -73,6 +74,10 @@ img.me {
   border: none !important;
   box-shadow: none !important;
   filter: drop-shadow(0 0 40px rgba(255, 255, 255, .5));
+}
+
+.stark-shadow {
+  text-shadow: 0 0 30px black;
 }
 
 .soft-shadow {

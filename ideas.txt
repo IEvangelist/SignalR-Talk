@@ -14,3 +14,27 @@ Twitter - Client (Angular)
 Blazor App
 Maybe Video Streaming + ASCII
 or maybe GPS + Map, etc?
+
+
+---
+
+# NuGet
+
+@ul[no-bullets]
+
+ - [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR/)
+ - [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client/)
+ - [Microsoft.AspNetCore.SignalR.Protocols.MessagePack](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Protocols.MessagePack/)
+
+@ulend
+
+---
+
+# NPM
+
+@ul[no-bullets]
+
+ - [@aspnet/signalr](https://www.npmjs.com/package/@aspnet/signalr)
+ - [@aspnet/signalr-protocol-msgpack](https://www.npmjs.com/package/@aspnet/signalr-protocol-msgpack)
+
+@ulend

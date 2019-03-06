@@ -1,5 +1,5 @@
 ---
-@size[3em](@css[signalr](SignalR))
+# @color[--signalr](SignalR)
 ## Above & Beyond Chat
 ---
 
@@ -23,12 +23,12 @@
 
 ---
 
-# I @color[red](@fa[heart]) The
-### @css[twitter](#DeveloperCommunity @fa[twitter])
+# @color[white](I) @color[red](@fa[heart]) @color[white](The)
+### #DeveloperCommunity @css[twitter](@fa[twitter])
 
 ---
 
-# SignalR
+# SignalR@color[white](?)
 
 @ul[no-bullets]
 
@@ -49,24 +49,6 @@
  - @fa[exclamation-circle] &nbsp; @color[red](`Java`) Client (Java 8 or later)
 
 @ulend
-
----
-
-# NuGet
-
-[Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR/)
-
-[Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client/)
-
-[Microsoft.AspNetCore.SignalR.Protocols.MessagePack](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Protocols.MessagePack/)
-
----
-
-# NPM
-
-[@aspnet/signalr](https://www.npmjs.com/package/@aspnet/signalr)
-
-[@aspnet/signalr-protocol-msgpack](https://www.npmjs.com/package/@aspnet/signalr-protocol-msgpack)
 
 ---?color=#333
 
@@ -90,17 +72,8 @@
 ---?image=assets/hubs.jpg&size=contain
 
 @snap[north-east]
-# @color[--signalr](@css[soft-shadow](Hubs))
+# @color[--signalr](@css[stark-shadow](Hubs))
 @snapend
-
----
-
-# Protocols
-
- - JSON (Text-Based)
- - MessagePack (Binary)
-
-> Protocols are extensible
 
 ---?color=#333
 
@@ -108,16 +81,25 @@
 
 @snap[south span-100]
 @[1]
-@[3-6]
-@[8-11]
-@[13-16]
-@[18-21]
-@[23-26]
-@[28-31]
-@[33-38]
-@[40-45]
-@[47-50]
+@[3-7]
+@[9-13]
+@[15-19]
+@[21-25]
+@[27-31]
+@[33-37]
+@[39-44]
+@[46-51]
+@[53-57]
 @snapend
+
+---
+
+# Protocols
+
+ - [JSON (Text-Based) @fa[external-link]](https://www.newtonsoft.com/json)
+ - [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
+
+> The SignalR Protocol is a protocol for two-way RPC over any Message-based transport
 
 ---
 
@@ -134,28 +116,24 @@
 
 # Summary
 
- + Chat App (Much Improved)
- + Razor Pages + VueJS
- + JSON Protocol
- + Azure SignalR
-
- <a href='https://bit.ly/signalr-chat' target='_blank'>bit.ly/signalr-chat</a>
-
----
-
-# Perf
-
-<a href='aka.ms/aspnet/BenchMarks' target='_blank'>
-aka.ms/aspnet/BenchMarks
-</a>
+@ul[no-bullets](false)
+ - @fa[check] &nbsp; Razor Pages + `VueJS`
+ - @fa[check] &nbsp; `JSON` Protocol
+ - @fa[check] &nbsp; __Azure__ SignalR
+ - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
+@ulend
 
 ---
 
-# Specs
+# @fa[fighter-jet] Perf
 
-<a href='https://github.com/aspnet/AspNetCore/tree/master/src/SignalR/docs/specs' target=''>
-ASP.NET Core SignalR - Specs
-</a>
+[aka.ms/aspnet/BenchMarks @fa[external-link]](https://aka.ms/aspnet/BenchMarks)
+
+---
+
+# @fa[file-text] Specs
+
+[ASP.NET Core SignalR - Specs @fa[external-link]](https://github.com/aspnet/AspNetCore/tree/master/src/SignalR/docs/specs)
 
 ---
 
@@ -172,6 +150,13 @@ ASP.NET Core SignalR - Specs
 
 # Summary
 
+@ul[no-bullets](false)
+ - @fa[check] &nbsp; Blazor
+ - @fa[check] &nbsp; `MessagePack` Protocol
+ - @fa[check] &nbsp; Twitter Streaming
+ - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
+@ulend
+
 ---
 
 @snap[east]
@@ -182,6 +167,17 @@ ASP.NET Core SignalR - Specs
         <path d="M135 0a135 135 0 1 0 42.59 263.14l-67-67 13.79-38.59h36.5a22.56 22.56 0 0 0 0-45.12H52.11v-1l55.76-55.75h1V74h52a60.89 60.89 0 0 1 2.93 121.7l49.36 49.37A135 135 0 0 0 135 0z" />
     </svg>
 </div>
+
+---
+
+# Summary
+
+@ul[no-bullets](false)
+ - @fa[check] &nbsp; ASP.NET Core + Angular
+ - @fa[check] &nbsp; `JSON` Protocol
+ - @fa[check] &nbsp; Video ASCII Art (pseudo-stream)
+ - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
+@ulend
 
 ---
 
