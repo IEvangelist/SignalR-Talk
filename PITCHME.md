@@ -23,13 +23,30 @@
 
 ---
 
+# I @color[red](@fa[heart]) The
+### @css[twitter](#DeveloperCommunity @fa[twitter])
+
+---
+
 # SignalR
 
 @ul[no-bullets]
 
- - @fa[github]    Open-source
- - @fa[clock-o]   Real-time web functionality
- - @fa[server]   Server pushes content to Client 
+ - @fa[github] &nbsp; Open-Source
+ - @fa[clock-o] &nbsp; Real-Time Web Functionality
+ - @fa[server] &nbsp; Server pushes content to client
+
+@ulend
+
+---
+
+# Platforms
+
+@ul[no-bullets]
+
+ - @fa[code] &nbsp; @color[magenta](`JavaScript`) Client (IE 11)
+ - @fa[smile-o] &nbsp; @color[cyan](`.NET`) Client (Android & iOS)
+ - @fa[exclamation-circle] &nbsp; @color[red](`Java`) Client (Java 8 or later)
 
 @ulend
 
@@ -50,8 +67,6 @@
 [@aspnet/signalr](https://www.npmjs.com/package/@aspnet/signalr)
 
 [@aspnet/signalr-protocol-msgpack](https://www.npmjs.com/package/@aspnet/signalr-protocol-msgpack)
-
----
 
 ---?color=#333
 
@@ -75,7 +90,7 @@
 ---?image=assets/hubs.jpg&size=contain
 
 @snap[north-east]
-# @color[#222](Hubs)
+# @color[--signalr](@css[soft-shadow](Hubs))
 @snapend
 
 ---
@@ -84,6 +99,25 @@
 
  - JSON (Text-Based)
  - MessagePack (Binary)
+
+> Protocols are extensible
+
+---?color=#333
+
+@code[csharp zoom-4](source/Hub.cs)
+
+@snap[south span-100]
+@[1]
+@[3-6]
+@[8-11]
+@[13-16]
+@[18-21]
+@[23-26]
+@[28-31]
+@[33-38]
+@[40-45]
+@[47-50]
+@snapend
 
 ---
 

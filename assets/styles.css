@@ -8,6 +8,7 @@
 
 .no-bullets {
   list-style-type: none !important;
+  font-size: 3rem !important;
 }
 
 .reveal h1 {
