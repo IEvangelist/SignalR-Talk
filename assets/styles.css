@@ -55,6 +55,10 @@
   color: var(--dimmed) !important;
 }
 
+.dark-bg > blockquote {
+  background: rgba(0,0,0,0.7) !important;
+}
+
 .blinking {
   animation: blinkingText 1.25s linear infinite;
 }

@@ -3,6 +3,6 @@ public async Task SendGroup(
     string message) {
     await Clients.Group(groupName)
                  .SendAsync(
-                     "GroupMessage",
-                     message);
+                    "GroupMessage",
+                    message);
 }

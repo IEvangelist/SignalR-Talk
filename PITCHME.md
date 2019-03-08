@@ -32,9 +32,9 @@
 
 @ul[no-bullets]
 
- - @fa[github] &nbsp; Open-Source
- - @fa[clock-o] &nbsp; Real-Time Web Functionality
- - @fa[server] &nbsp; Server pushes content to client
+ - @color[gray](@fa[github-square]) &nbsp; Open-Source
+ - @color[green](@fa[clock-o]) &nbsp; Real-Time Web Functionality
+ - @color[teal](@fa[server]) &nbsp; Server pushes content to client
 
 @ulend
 
@@ -106,6 +106,10 @@
 
 @snap[north-east]
 # @color[--signalr](@css[stark-shadow](Hubs))
+@snapend
+
+@snap[south-east dark-bg]
+<blockquote>The SignalR Hub<br/>is the proxy between<br/>Server and Client</blockquote>
 @snapend
 
 ---

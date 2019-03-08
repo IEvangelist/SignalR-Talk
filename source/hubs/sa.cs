@@ -3,6 +3,6 @@ public async Task SendAll(
 {
     await Clients.All
                  .SendAsync(
-                     "Message",
-                     message);
+                    "Message",
+                    message);
 }
