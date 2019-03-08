@@ -1,10 +1,10 @@
 public void Configure(
-  IApplicationBuilder app,
-  IHostingEnvironment env)
+    IApplicationBuilder app,
+    IHostingEnvironment env)
 {
     app.UseSignalR(routes =>
     {
-      // 🗺️
-      routes.MapHub<ChatHub>("/chat");
+        // 🗺️
+        routes.MapHub<ChatHub>("/chat");
     });
 }

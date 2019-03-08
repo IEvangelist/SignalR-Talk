@@ -54,20 +54,20 @@
 
 ### @color[cyan](`Startup`)`.ConfigureServices`
 
-@code[csharp zoom-20](source/cs.cs)
+@code[csharp zoom-18](source/cs.cs)
 
 @snap[south span-100]
-@[3-6](Adding the `SignalR` services into `IServiceCollection`.)
+@[3-5](Adding the `SignalR` services into `IServiceCollection`.)
 @snapend
 
 ---?color=#333
 
 ### @color[cyan](`Startup`)`.Configure`
 
-@code[csharp zoom-20](source/c.cs)
+@code[csharp zoom-18](source/c.cs)
 
 @snap[south span-100]
-@[4-9](Mapping the `ChatHub` to the `"/chat"` endpoint.)
+@[4-8](Mapping the `ChatHub` to the `"/chat"` endpoint.)
 @snapend
 
 ---
