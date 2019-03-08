@@ -50,24 +50,24 @@
 
 @ulend
 
----?color=#333
+---
 
 ### @color[cyan](`Startup`)`.ConfigureServices`
 
 @code[csharp zoom-18](source/cs.cs)
 
 @snap[south span-100]
-@[3-5](Adding the `SignalR` services into `IServiceCollection`.)
+@[4-5](Adding the `SignalR` services into `IServiceCollection`.)
 @snapend
 
----?color=#333
+---
 
 ### @color[cyan](`Startup`)`.Configure`
 
 @code[csharp zoom-18](source/c.cs)
 
 @snap[south span-100]
-@[4-8](Mapping the `ChatHub` to the `"/chat"` endpoint.)
+@[5-9](Mapping the `ChatHub` to the `"/chat"` endpoint.)
 @snapend
 
 ---
@@ -79,12 +79,6 @@
  - Long Polling
 
 > The best transport is automatically chosen based on server and client capabilities.
-
----?image=assets/hubs.jpg&size=contain
-
-@snap[north-east]
-# @color[--signalr](@css[stark-shadow](Hubs))
-@snapend
 
 ---
 
@@ -102,11 +96,67 @@
 # Summary
 
 @ul[no-bullets](false)
- - @fa[check] &nbsp; Razor Pages + `VueJS`
- - @fa[check] &nbsp; `JSON` Protocol
- - @fa[check] &nbsp; __Azure__ SignalR
+ - @fa[check] &nbsp; Razor Pages + @color[#41B883](`VueJS`)
+ - @fa[check] &nbsp; @color[grey](`JSON`) Protocol
+ - @fa[check] &nbsp; Azure SignalR
  - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
 @ulend
+
+---?image=assets/hubs.jpg&size=contain
+
+@snap[north-east]
+# @color[--signalr](@css[stark-shadow](Hubs))
+@snapend
+
+---
+
+### @color[cyan](`ChatHub`)`.SendAll`
+
+@code[csharp zoom-18](source/hubs/sa.cs)
+
+@snap[south span-100]
+@[3-6](Everyone connected to this hubs receives the message)
+@snapend
+
+---
+
+### @color[cyan](`ChatHub`)`.SendCaller`
+
+@code[csharp zoom-18](source/hubs/sc.cs)
+
+@snap[south span-100]
+@[3-6](Only I get this message, it's an "echo")
+@snapend
+
+---
+
+### @color[cyan](`ChatHub`)`.SendOthers`
+
+@code[csharp zoom-18](source/hubs/so.cs)
+
+@snap[south span-100]
+@[3-6](Everyone connected to this hubs receives the message, except for me)
+@snapend
+
+---
+
+### @color[cyan](`ChatHub`)`.SendGroup`
+
+@code[csharp zoom-18](source/hubs/sg.cs)
+
+@snap[south span-100]
+@[4-7](Everyone connected to this hub and in this group receives the message)
+@snapend
+
+---
+
+### @color[cyan](`ChatHub`)`.SendUser`
+
+@code[csharp zoom-18](source/hubs/su.cs)
+
+@snap[south span-100]
+@[4-7](This is a direct message to a specific user)
+@snapend
 
 ---
 
@@ -116,6 +166,28 @@
  - [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
 
 > The SignalR Protocol is a protocol for two-way RPC over any Message-based transport
+
+---
+
+@snap[east]
+# @color[white](Demo)
+@snapend
+<div class="logo">
+    <svg viewBox="0 0 275 275" class="signalr-svg"  xmlns="http://www.w3.org/2000/svg">
+        <path d="M135 0a135 135 0 1 0 42.59 263.14l-67-67 13.79-38.59h36.5a22.56 22.56 0 0 0 0-45.12H52.11v-1l55.76-55.75h1V74h52a60.89 60.89 0 0 1 2.93 121.7l49.36 49.37A135 135 0 0 0 135 0z" />
+    </svg>
+</div>
+
+---
+
+# Summary
+
+@ul[no-bullets](false)
+ - @fa[check] &nbsp; ASP.NET Core + @color[magenta](Blazor)
+ - @fa[check] &nbsp; @color[grey](`MessagePack`) Protocol
+ - @fa[check] &nbsp; @css[twitter](Twitter) Streaming
+ - @fa[check] &nbsp; [bit.ly/signalr-blazing @fa[external-link]](http://bit.ly/signalr-blazing)
+@ulend
 
 ---
 
@@ -145,31 +217,19 @@
 # Summary
 
 @ul[no-bullets](false)
- - @fa[check] &nbsp; Blazor
- - @fa[check] &nbsp; `MessagePack` Protocol
- - @fa[check] &nbsp; Twitter Streaming
-@ulend
-
----
-
-@snap[east]
-# @color[white](Demo)
-@snapend
-<div class="logo">
-    <svg viewBox="0 0 275 275" class="signalr-svg"  xmlns="http://www.w3.org/2000/svg">
-        <path d="M135 0a135 135 0 1 0 42.59 263.14l-67-67 13.79-38.59h36.5a22.56 22.56 0 0 0 0-45.12H52.11v-1l55.76-55.75h1V74h52a60.89 60.89 0 0 1 2.93 121.7l49.36 49.37A135 135 0 0 0 135 0z" />
-    </svg>
-</div>
-
----
-
-# Summary
-
-@ul[no-bullets](false)
- - @fa[check] &nbsp; ASP.NET Core + Angular
- - @fa[check] &nbsp; `JSON` Protocol
+ - @fa[check] &nbsp; ASP.NET Core + @color[#F44336](Angular)
+ - @fa[check] &nbsp; @color[grey](`JSON`) Protocol
  - @fa[check] &nbsp; Video ASCII Art (pseudo-stream)
+ - @fa[check] &nbsp; [bit.ly/signalr-streaming @fa[external-link]](http://bit.ly/signalr-streaming)
 @ulend
+
+---
+
+# Resources
+
+ - [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
+ - [bit.ly/signalr-blazing @fa[external-link]](http://bit.ly/signalr-blazing)
+ - [bit.ly/signalr-streaming @fa[external-link]](http://bit.ly/signalr-streaming)
 
 ---
 
