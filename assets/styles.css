@@ -1,5 +1,6 @@
 :root {
   --signalr: #00abec;
+  --dimmed: rgba(255, 255, 255, .3);
 }
 
 .signalr {
@@ -32,6 +33,37 @@
   .logo > .signalr-svg {
       fill: var(--signalr);
   }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "top-left top-center top-right" "middle-left middle-center middle-right" "bottom-left bottom-center bottom-right";
+}
+
+.top-left { grid-area: top-left; }
+.top-center { grid-area: top-center; }
+.top-right { grid-area: top-right; }
+.middle-left { grid-area: middle-left; }
+.middle-center { grid-area: middle-center; }
+.middle-right { grid-area: middle-right; }
+.bottom-right { grid-area: bottom-right; }
+.bottom-left { grid-area: bottom-left; }
+.bottom-center { grid-area: bottom-center; }
+
+.dimmed {
+  color: var(--dimmed) !important;
+}
+
+.blinking {
+  animation: blinkingText 1.25s linear infinite;
+}
+
+@keyframes blinkingText {
+  50% { 
+    color: var(--dimmed);
+  }
+}
 
 img.mute {
   border: none !important;

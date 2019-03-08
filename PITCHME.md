@@ -120,6 +120,56 @@
 
 ---
 
+<div class="grid-container">
+  <div class="top-left blinking">
+    Dave (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-center blinking">
+    Maggie (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-right blinking">
+    Carol (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-left blinking">
+    Rachel (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-center offset-blinking">
+    @css[signalr](__Chat Hub__)
+    <br/>
+    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+  </div>
+  <div class="middle-right blinking">
+    Maria (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-right blinking">
+    Max (DevOps)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-left blinking">
+    ... (Bot)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-center blinking">
+    Steve (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+</div>
+
+---
+
 ### @color[cyan](`ChatHub`)`.SendCaller`
 
 @code[csharp zoom-18](source/hubs/sc.cs)
@@ -127,6 +177,56 @@
 @snap[south span-100]
 @[3-6](Only I get this message, it's an "echo")
 @snapend
+
+---
+
+<div class="grid-container">
+  <div class="top-left blinking">
+    Dave (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-center dimmed">
+    Maggie (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-right dimmed">
+    Carol (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-left dimmed">
+    Rachel (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-center">
+    @css[signalr](__Chat Hub__)
+    <br/>
+    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+  </div>
+  <div class="middle-right dimmed">
+    Maria (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-right dimmed">
+    Max (DevOps)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-left dimmed">
+    ... (Bot)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-center dimmed">
+    Steve (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+</div>
 
 ---
 
@@ -140,6 +240,56 @@
 
 ---
 
+<div class="grid-container">
+  <div class="top-left dimmed">
+    Dave (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-center blinking">
+    Maggie (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-right blinking">
+    Carol (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-left blinking">
+    Rachel (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-center">
+    @css[signalr](__Chat Hub__)
+    <br/>
+    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+  </div>
+  <div class="middle-right blinking">
+    Maria (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-right blinking">
+    Max (DevOps)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-left blinking">
+    ... (Bot)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-center blinking">
+    Steve (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+</div>
+
+---
+
 ### @color[cyan](`ChatHub`)`.SendGroup`
 
 @code[csharp zoom-18](source/hubs/sg.cs)
@@ -150,6 +300,56 @@
 
 ---
 
+<div class="grid-container">
+  <div class="top-left dimmed">
+    Dave (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-center blinking">
+    Maggie (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-right dimmed">
+    Carol (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-left blinking">
+    Rachel (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-center">
+    @css[signalr](__Chat Hub__)
+    <br/>
+    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+  </div>
+  <div class="middle-right dimmed">
+    Maria (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-right dimmed">
+    Max (DevOps)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-left dimmed">
+    ... (Bot)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-center dimmed">
+    Steve (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+</div>
+
+---
+
 ### @color[cyan](`ChatHub`)`.SendUser`
 
 @code[csharp zoom-18](source/hubs/su.cs)
@@ -157,6 +357,56 @@
 @snap[south span-100]
 @[4-7](This is a direct message to a specific user)
 @snapend
+
+---
+
+<div class="grid-container">
+  <div class="top-left dimmed">
+    Dave (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-center dimmed">
+    Maggie (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="top-right dimmed">
+    Carol (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-left dimmed">
+    Rachel (UX)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="middle-center">
+    @css[signalr](__Chat Hub__)
+    <br/>
+    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+  </div>
+  <div class="middle-right blinking">
+    Maria (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-right dimmed">
+    Max (DevOps)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-left dimmed">
+    ... (Bot)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+  <div class="bottom-center dimmed">
+    Steve (Dev)
+    <br/>
+    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+  </div>
+</div>
 
 ---
 
