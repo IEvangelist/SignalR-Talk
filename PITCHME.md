@@ -52,22 +52,22 @@
 
 ---?color=#333
 
-## @color[cyan](`Startup`)
+### @color[cyan](`Startup`)`.ConfigureServices`
 
 @code[csharp zoom-20](source/cs.cs)
 
 @snap[south span-100]
-@[3-4](Adding the `SignalR` services into `IServiceCollection`.)
+@[3-6](Adding the `SignalR` services into `IServiceCollection`.)
 @snapend
 
 ---?color=#333
 
-## @color[cyan](`Startup`)
+### @color[cyan](`Startup`)`.Configure`
 
 @code[csharp zoom-20](source/c.cs)
 
 @snap[south span-100]
-@[4-8](Mapping the `ChatHub` to the `"/chat"` endpoint.)
+@[4-9](Mapping the `ChatHub` to the `"/chat"` endpoint.)
 @snapend
 
 ---
@@ -85,32 +85,6 @@
 @snap[north-east]
 # @color[--signalr](@css[stark-shadow](Hubs))
 @snapend
-
----?color=#333
-
-@code[csharp zoom-4](source/Hub.cs)
-
-@snap[south span-100]
-@[1]
-@[3-7]
-@[9-13]
-@[15-19]
-@[21-25]
-@[27-31]
-@[33-37]
-@[39-44]
-@[46-51]
-@[53-57]
-@snapend
-
----
-
-# Protocols
-
- - [JSON (Text-Based) @fa[external-link]](https://www.newtonsoft.com/json)
- - [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
-
-> The SignalR Protocol is a protocol for two-way RPC over any Message-based transport
 
 ---
 
@@ -133,6 +107,15 @@
  - @fa[check] &nbsp; __Azure__ SignalR
  - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
 @ulend
+
+---
+
+# Protocols
+
+ - [JSON (Text-Based) @fa[external-link]](https://www.newtonsoft.com/json)
+ - [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
+
+> The SignalR Protocol is a protocol for two-way RPC over any Message-based transport
 
 ---
 
@@ -165,7 +148,6 @@
  - @fa[check] &nbsp; Blazor
  - @fa[check] &nbsp; `MessagePack` Protocol
  - @fa[check] &nbsp; Twitter Streaming
- - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
 @ulend
 
 ---
@@ -187,7 +169,6 @@
  - @fa[check] &nbsp; ASP.NET Core + Angular
  - @fa[check] &nbsp; `JSON` Protocol
  - @fa[check] &nbsp; Video ASCII Art (pseudo-stream)
- - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
 @ulend
 
 ---

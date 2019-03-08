@@ -11,6 +11,10 @@
   font-size: 3rem !important;
 }
 
+.no-bullets > li > i.fa-check {
+  color: limegreen;
+}
+
 .reveal h1 {
   color: var(--signalr);
 }
