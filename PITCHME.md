@@ -52,11 +52,22 @@
 
 ---?color=#333
 
-@code[csharp zoom-19](source/Startup.cs)
+## @color[cyan](`Startup`)
+
+@code[csharp zoom-20](source/cs.cs)
 
 @snap[south span-100]
-@[20](Adding the `SignalR` services into `IServiceCollection.`)
-@[38-40](Use `SignalR` and map a route given my `Hub` subclass and its corresponding route.)
+@[3-4](Adding the `SignalR` services into `IServiceCollection`.)
+@snapend
+
+---?color=#333
+
+## @color[cyan](`Startup`)
+
+@code[csharp zoom-20](source/c.cs)
+
+@snap[south span-100]
+@[4-8](Mapping the `ChatHub` to the `"/chat"` endpoint.)
 @snapend
 
 ---
