@@ -34,7 +34,7 @@
 
  - @color[gray](@fa[github-square]) &nbsp; Open-Source
  - @color[green](@fa[clock-o]) &nbsp; Real-Time Web Functionality
- - @color[teal](@fa[server]) &nbsp; Server pushes content to client
+ - @color[teal](@fa[server]) &nbsp; Server @css[blinking](@fa[arrows-h]) Client
 
 @ulend
 
@@ -46,7 +46,8 @@
 
  - @fa[code] &nbsp; @color[magenta](`JavaScript`) Client (IE 11)
  - @fa[smile-o] &nbsp; @color[cyan](`.NET`) Client (Android & iOS)
- - @fa[exclamation-circle] &nbsp; @color[red](`Java`) Client (Java 8 or later)
+ - @fa[coffee] &nbsp; @color[red](`Java`) Client (Java 8 or later)
+ - @fa[exclamation-circle] &nbsp; @color[#004482](`C++`) & @color[#FB9D3B](Swift) Clients (Unsupported)
 
 @ulend
 
@@ -74,9 +75,9 @@
 
 # Transports
 
- - WebSockets
- - Server-Sent Events
- - Long Polling
+ - WebSockets &nbsp; @fa[globe] @fa[wrench]
+ - Server-Sent Events &nbsp; @fa[server] @fa[arrow-right] @fa[bolt]
+ - Long Polling &nbsp; @fa[long-arrow-right] @fa[list-alt]
 
 > The best transport is automatically chosen based on server and client capabilities.
 
@@ -416,8 +417,10 @@
 
 # Protocols
 
- - [JSON (Text-Based) @fa[external-link]](https://www.newtonsoft.com/json)
- - [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
+@ul[no-bullets](false)
+ - @fa[file-text-o] &nbsp; [JSON (Text-Based) @fa[external-link]](https://www.newtonsoft.com/json)
+ - @fa[file-archive-o] &nbsp; [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
+@ulend
 
 > The SignalR Protocol is a protocol for two-way RPC over any Message-based transport
 
@@ -445,13 +448,16 @@
 
 ---
 
-# @fa[fighter-jet] Perf
+# 😲 Perf
 
-[aka.ms/aspnet/BenchMarks @fa[external-link]](https://aka.ms/aspnet/BenchMarks)
+@ul[no-bullets](false)
+ - @fa[fighter-jet] &nbsp; [ASP.NET Core BenchMarks @fa[external-link]](https://aka.ms/aspnet/BenchMarks)
+ - @fa[bolt] &nbsp; [SignalR Benchmarks @fa[external-link]](https://msit.powerbi.com/view?r=eyJrIjoiYTZjMTk3YjEtMzQ3Yi00NTI5LTg5ZDItNmUyMGRlOTkwMGRlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&pageName=ReportSectionffcb2816a4d9d4f28542)
+@ulend
 
 ---
 
-# @fa[file-text] Specs
+# 📖 Specs
 
 [ASP.NET Core SignalR - Specs @fa[external-link]](https://github.com/aspnet/AspNetCore/tree/master/src/SignalR/docs/specs)
 
@@ -481,9 +487,11 @@
 
 # Resources
 
- - [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
- - [bit.ly/signalr-blazing @fa[external-link]](http://bit.ly/signalr-blazing)
- - [bit.ly/signalr-streaming @fa[external-link]](http://bit.ly/signalr-streaming)
+@ul[no-bullets](false)
+ - @fa[link] &nbsp; [bit.ly/signalr-chat](https://bit.ly/signalr-chat)
+ - @fa[link] &nbsp; [bit.ly/signalr-blazing](http://bit.ly/signalr-blazing)
+ - @fa[link] &nbsp; [bit.ly/signalr-streaming](http://bit.ly/signalr-streaming)
+@ulend
 
 ---
 

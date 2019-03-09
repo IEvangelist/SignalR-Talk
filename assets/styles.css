@@ -1,6 +1,6 @@
 :root {
   --signalr: #00abec;
-  --dimmed: rgba(255, 255, 255, .3);
+  --dimmed: rgba(255, 255, 255, .35);
 }
 
 .signalr {
@@ -14,6 +14,26 @@
 
 .no-bullets > li > i.fa-check {
   color: limegreen;
+}
+
+.thumbs-up-all {
+  display: inline-block;
+  transition: all .1s ease-in-out;
+}
+
+.thumbs-up-all:after {
+  animation: change 5s linear infinite;
+  display: inline-block;
+  content: "👍🏼";
+}
+
+@keyframes change {
+    0% { content: "👍🏼"; }
+   20% { content: "👍🏻"; }
+   40% { content: "👍"; }
+   60% { content: "👍🏽"; }
+   80% { content: "👍🏾"; }
+  100% { content: "👍🏿"; }
 }
 
 .reveal h1 {
@@ -60,11 +80,11 @@
 }
 
 .blinking {
-  animation: blinkingText 1.25s linear infinite;
+  animation: blinkingText 1s linear infinite;
 }
 
 @keyframes blinkingText {
-  50% { 
+  50% {
     color: var(--dimmed);
   }
 }
@@ -186,8 +206,8 @@ h4.one-half {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
   grid-template-areas: 
-  ' . top-left top-right . '
-  ' . bottom-left bottom-right . ';
+  " . top-left top-right . "
+  " . bottom-left bottom-right . ";
 }
 
 .top-left {
@@ -416,7 +436,7 @@ img.excited {
   }
 }
 
-html.bg-img-opacity-15 .slide-background.present:not([data-background-hash*='binary-strings-black.jpg']) {
+html.bg-img-opacity-15 .slide-background.present:not([data-background-hash*="binary-strings-black.jpg"]) {
   opacity: 1 !important;
 }
 
