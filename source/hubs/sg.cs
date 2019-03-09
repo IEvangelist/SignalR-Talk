@@ -1,6 +1,6 @@
-public async Task SendGroup(
+public async Task SendToGroup(
     string groupName,
-    string message) {
+    string message) { // 👇
     await Clients.Group(groupName)
                  .SendAsync(
                     "GroupMessage",

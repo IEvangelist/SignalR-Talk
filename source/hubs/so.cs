@@ -1,7 +1,7 @@
-public async Task SendOthers(
+public async Task SendToOthers(
     string message) {
-    await Clients.Others
+    await Clients.Others // 👈
                  .SendAsync(
-                    "SendOthers",
+                    "SendToOthers",
                     message);
 }

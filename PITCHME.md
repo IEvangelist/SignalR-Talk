@@ -28,13 +28,24 @@
 
 ---
 
-# SignalR@color[white](?)
+# SignalR@color[white](!)
 
 @ul[no-bullets]
 
  - @color[gray](@fa[github-square]) &nbsp; Open-Source
  - @color[green](@fa[clock-o]) &nbsp; Real-Time Web Functionality
  - @color[teal](@fa[server]) &nbsp; Server @css[blinking](@fa[arrows-h]) Client
+
+@ulend
+
+---
+
+# SignalR@color[white](?)
+
+@ul[no-bullets]
+
+ - @fa[check] &nbsp; Benefits - "_Are we there yet?_"
+ - @fa[check] &nbsp; Use Cases - _Real-Time * 🎉_
 
 @ulend
 
@@ -110,12 +121,12 @@
 @snapend
 
 @snap[south-east dark-bg]
-<blockquote>The SignalR Hub<br/>is the proxy between<br/>Server and Client</blockquote>
+<blockquote>The SignalR Hub<br/>is the proxy between<br/>Server and Client(s)</blockquote>
 @snapend
 
 ---
 
-### @color[cyan](`ChatHub`)`.SendAll`
+### @color[cyan](`ChatHub`)`.Broadcast`
 
 @code[csharp zoom-18](source/hubs/sa.cs)
 
@@ -175,7 +186,7 @@
 
 ---
 
-### @color[cyan](`ChatHub`)`.SendCaller`
+### @color[cyan](`ChatHub`)`.Echo`
 
 @code[csharp zoom-18](source/hubs/sc.cs)
 
@@ -235,7 +246,7 @@
 
 ---
 
-### @color[cyan](`ChatHub`)`.SendOthers`
+### @color[cyan](`ChatHub`)`.SendToOthers`
 
 @code[csharp zoom-18](source/hubs/so.cs)
 
@@ -295,7 +306,7 @@
 
 ---
 
-### @color[cyan](`ChatHub`)`.SendGroup`
+### @color[cyan](`ChatHub`)`.SendToGroup`
 
 @code[csharp zoom-18](source/hubs/sg.cs)
 
@@ -355,7 +366,7 @@
 
 ---
 
-### @color[cyan](`ChatHub`)`.SendUser`
+### @color[cyan](`ChatHub`)`.DirectMessage`
 
 @code[csharp zoom-18](source/hubs/su.cs)
 
@@ -451,8 +462,8 @@
 # 😲 Perf
 
 @ul[no-bullets](false)
- - @fa[fighter-jet] &nbsp; [ASP.NET Core BenchMarks @fa[external-link]](https://aka.ms/aspnet/BenchMarks)
- - @fa[bolt] &nbsp; [SignalR Benchmarks @fa[external-link]](https://msit.powerbi.com/view?r=eyJrIjoiYTZjMTk3YjEtMzQ3Yi00NTI5LTg5ZDItNmUyMGRlOTkwMGRlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&pageName=ReportSectionffcb2816a4d9d4f28542)
+ - @color[gray](@fa[fighter-jet]) &nbsp; [ASP.NET Core BenchMarks @fa[external-link]](https://aka.ms/aspnet/BenchMarks)
+ - @color[yellow](@fa[bolt]) &nbsp; &nbsp; [SignalR Benchmarks @fa[external-link]](https://msit.powerbi.com/view?r=eyJrIjoiYTZjMTk3YjEtMzQ3Yi00NTI5LTg5ZDItNmUyMGRlOTkwMGRlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9&pageName=ReportSectionffcb2816a4d9d4f28542)
 @ulend
 
 ---

@@ -1,8 +1,8 @@
-public async Task SendUser(
+public async Task DirectMessage(
     string userId,
-    string message) {
+    string message) { // 👇
     await Clients.User(userId)
                  .SendAsync(
-                    "DM",
+                    "DirectMessage",
                     message);
 }

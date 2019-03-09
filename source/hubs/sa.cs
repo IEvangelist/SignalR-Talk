@@ -1,8 +1,8 @@
-public async Task SendAll(
+public async Task Broadcast(
     string message)
 {
-    await Clients.All
+    await Clients.All // 👈
                  .SendAsync(
-                    "Message",
+                    "Broadcast",
                     message);
 }
