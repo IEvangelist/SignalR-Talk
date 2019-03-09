@@ -1,6 +1,7 @@
 public async Task DirectMessage(
     string userId,
-    string message) { // 👇
+    string message) 
+{               // 👇
     await Clients.User(userId)
                  .SendAsync(
                     "DirectMessage",

@@ -1,5 +1,6 @@
 public async Task Echo(
-    string message) {
+    string message)
+{
     await Clients.Caller // 👈
                  .SendAsync(
                     "Echo",

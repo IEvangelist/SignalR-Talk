@@ -46,6 +46,7 @@
 
  - @fa[check] &nbsp; Benefits - "_Are we there yet?_"
  - @fa[check] &nbsp; Use Cases - _Real-Time * 🎉_
+ - @fa[check] &nbsp; Everywhere you want to be ...
 
 @ulend
 
@@ -76,7 +77,27 @@
 
 ### @color[cyan](`Startup`)`.Configure`
 
-@code[csharp zoom-18](source/c.cs)
+@code[csharp zoom-16](source/c.cs)
+
+@snap[south span-100]
+@[5-9](Mapping the `ChatHub` to the `"/chat"` endpoint.)
+@snapend
+
+---
+
+### ☁️ @color[cyan](`Startup`)`.ConfigureServices`
+
+@code[csharp zoom-18](source/acs.cs)
+
+@snap[south span-100]
+@[4-6](Adding the `SignalR` and `AzureSignalR` services into `IServiceCollection`.)
+@snapend
+
+---
+
+### ☁️ @color[cyan](`Startup`)`.Configure`
+
+@code[csharp zoom-16](source/ac.cs)
 
 @snap[south span-100]
 @[5-9](Mapping the `ChatHub` to the `"/chat"` endpoint.)
@@ -105,7 +126,7 @@
 
 ---
 
-# Summary
+# Recap
 
 @ul[no-bullets](false)
  - @fa[check] &nbsp; Razor Pages + @color[#41B883](`VueJS`)
@@ -126,12 +147,18 @@
 
 ---
 
+# @color[magenta](@fa[magic]) Strings
+
+> We could extend the @color[cyan](`Hub<T>`) instead of the @color[cyan](`Hub`), this gives us a 💪-typed alternative.
+
+---
+
 ### @color[cyan](`ChatHub`)`.Broadcast`
 
 @code[csharp zoom-18](source/hubs/sa.cs)
 
 @snap[south span-100]
-@[3-6](Everyone connected to this hubs receives the message)
+@[4-7](Everyone connected to this hubs receives the message)
 @snapend
 
 ---
@@ -191,7 +218,7 @@
 @code[csharp zoom-18](source/hubs/sc.cs)
 
 @snap[south span-100]
-@[3-6](Only I get this message, it's an "echo")
+@[4-7](Only I get this message, it's an "echo")
 @snapend
 
 ---
@@ -448,7 +475,7 @@
 
 ---
 
-# Summary
+# Recap
 
 @ul[no-bullets](false)
  - @fa[check] &nbsp; ASP.NET Core + @color[magenta](Blazor)
@@ -485,7 +512,7 @@
 
 ---
 
-# Summary
+# Recap
 
 @ul[no-bullets](false)
  - @fa[check] &nbsp; ASP.NET Core + @color[#F44336](Angular)
