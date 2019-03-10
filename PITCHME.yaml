@@ -1,4 +1,5 @@
 theme: night
+highlight: dracula
 eager-loading : true
 background : assets/binary-strings-black.jpg
 background-opacity : 15
