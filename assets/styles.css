@@ -273,12 +273,11 @@ p > span.code-presenting-annotation.fragment.current-only.visible.current-fragme
 }
   
 .reveal .slides section .code-presenting-annotation {
-  color: white;
-  background: black;
+  color: black;
+  background: white;
   padding: 1px 15px;
   border-radius: 15px;
   opacity: 0.75 !important;
-  font-size: 50% !important;
 }
 
 .reveal p span.slide-title {
