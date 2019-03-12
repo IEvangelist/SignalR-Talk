@@ -59,7 +59,8 @@
  - @fa[code] &nbsp; @color[magenta](`JavaScript`) Client (IE 11)
  - @fa[smile-o] &nbsp; @color[cyan](`.NET`) Client (Android & iOS)
  - @fa[coffee] &nbsp; @color[red](`Java`) Client (Java 8 or later)
- - @fa[exclamation-circle] &nbsp; @color[#004482](`C++`) & @color[#FB9D3B](Swift) Clients (Unsupported)
+ - @fa[plus] &nbsp; @color[#004482](`C++`) Targeting 3.0 Release 
+ - @fa[apple] &nbsp; @color[#FB9D3B](Swift) 3<sup>@size[1.5rem](rd)</sup> Party Implementation
 
 @ulend
 
@@ -158,56 +159,63 @@
 @code[csharp zoom-18](source/hubs/sa.cs)
 
 @snap[south span-100]
-@[4-7](Everyone connected to this hubs receives the message)
+@[4-7](Everyone connected to this `Hub` receives the message)
 @snapend
 
 ---
 
 <div class="grid-container">
-  <div class="top-left blinking">
-    Dave (Dev)
+
+  <i class="fa fa-2x fa-arrows-h tla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left tca" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left tra" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left mla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-right mra" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left bla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left bca" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left bra" aria-hidden="true"></i>
+
+  <div class="top-left sender">
+    Dave (Sender)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="top-center blinking">
+  <div class="top-center">
     Maggie (UX)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="top-right blinking">
+  <div class="top-right">
     Carol (Dev)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="middle-left blinking">
+  <div class="middle-left">
     Rachel (UX)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="middle-center offset-blinking">
+  <div class="middle-center">
     @css[signalr](__Chat Hub__)
     <br/>
     <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
   </div>
-  <div class="middle-right blinking">
+  <div class="middle-right">
     Maria (Dev)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="bottom-right blinking">
-    Max (DevOps)
-    <br/>
+  <div class="bottom-right">
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Max (DevOps)
   </div>
-  <div class="bottom-left blinking">
-    ... (Bot)
-    <br/>
+  <div class="bottom-left">
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>... (Bot)
   </div>
-  <div class="bottom-center blinking">
-    Steve (Dev)
-    <br/>
+  <div class="bottom-center">
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Steve (Dev)
   </div>
 </div>
 
@@ -218,14 +226,17 @@
 @code[csharp zoom-18](source/hubs/sc.cs)
 
 @snap[south span-100]
-@[4-7](Only I get this message, it's an "echo")
+@[4-7](Only I get this message, it's an `"echo"`)
 @snapend
 
 ---
 
 <div class="grid-container">
-  <div class="top-left blinking">
-    Dave (Dev)
+
+  <i class="fa fa-2x fa-arrows-h tla" aria-hidden="true"></i>
+
+  <div class="top-left sender">
+    Dave (Sender)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
@@ -255,19 +266,16 @@
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right dimmed">
-    Max (DevOps)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Max (DevOps)
   </div>
   <div class="bottom-left dimmed">
-    ... (Bot)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>... (Bot)
   </div>
   <div class="bottom-center dimmed">
-    Steve (Dev)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Steve (Dev)
   </div>
 </div>
 
@@ -278,28 +286,38 @@
 @code[csharp zoom-18](source/hubs/so.cs)
 
 @snap[south span-100]
-@[3-6](Everyone connected to this hubs receives the message, except for me)
+@[3-6](Everyone connected to this `Hub` receives the message, except for me)
 @snapend
 
 ---
 
 <div class="grid-container">
-  <div class="top-left dimmed">
-    Dave (Dev)
+
+  <i class="fa fa-2x fa-long-arrow-right tla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left tca" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left tra" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left mla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-right mra" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left bla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left bca" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left bra" aria-hidden="true"></i>
+
+  <div class="top-left sender">
+    Dave (Sender)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="top-center blinking">
+  <div class="top-center">
     Maggie (UX)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="top-right blinking">
+  <div class="top-right">
     Carol (Dev)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="middle-left blinking">
+  <div class="middle-left">
     Rachel (UX)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
@@ -309,25 +327,22 @@
     <br/>
     <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
   </div>
-  <div class="middle-right blinking">
+  <div class="middle-right">
     Maria (Dev)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="bottom-right blinking">
-    Max (DevOps)
-    <br/>
+  <div class="bottom-right">
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Max (DevOps)
   </div>
-  <div class="bottom-left blinking">
-    ... (Bot)
-    <br/>
+  <div class="bottom-left">
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>... (Bot)
   </div>
-  <div class="bottom-center blinking">
-    Steve (Dev)
-    <br/>
+  <div class="bottom-center">
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Steve (Dev)
   </div>
 </div>
 
@@ -338,18 +353,23 @@
 @code[csharp zoom-18](source/hubs/sg.cs)
 
 @snap[south span-100]
-@[4-7](Everyone connected to this hub and in this group receives the message)
+@[4-7](Everyone connected to this `Hub` and in this group receives the message)
 @snapend
 
 ---
 
 <div class="grid-container">
-  <div class="top-left dimmed">
-    Dave (Dev)
+
+  <i class="fa fa-2x fa-long-arrow-right tla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left tca" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-left mla" aria-hidden="true"></i>
+
+  <div class="top-left sender">
+    Dave (Sender)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="top-center blinking">
+  <div class="top-center">
     Maggie (UX)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
@@ -359,7 +379,7 @@
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
-  <div class="middle-left blinking">
+  <div class="middle-left">
     Rachel (UX)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
@@ -375,19 +395,16 @@
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right dimmed">
-    Max (DevOps)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Max (DevOps)
   </div>
   <div class="bottom-left dimmed">
-    ... (Bot)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>... (Bot)
   </div>
   <div class="bottom-center dimmed">
-    Steve (Dev)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Steve (Dev)
   </div>
 </div>
 
@@ -404,8 +421,12 @@
 ---
 
 <div class="grid-container">
-  <div class="top-left dimmed">
-    Dave (Dev)
+
+  <i class="fa fa-2x fa-long-arrow-right tla" aria-hidden="true"></i>
+  <i class="fa fa-2x fa-long-arrow-right mra" aria-hidden="true"></i>
+
+  <div class="top-left sender">
+    Dave (Sender)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
@@ -429,25 +450,22 @@
     <br/>
     <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
   </div>
-  <div class="middle-right blinking">
+  <div class="middle-right">
     Maria (Dev)
     <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right dimmed">
-    Max (DevOps)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Max (DevOps)
   </div>
   <div class="bottom-left dimmed">
-    ... (Bot)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>... (Bot)
   </div>
   <div class="bottom-center dimmed">
-    Steve (Dev)
-    <br/>
     <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <br/>Steve (Dev)
   </div>
 </div>
 
@@ -498,6 +516,8 @@
 # 📖 Specs
 
 [ASP.NET Core SignalR - Specs @fa[external-link]](https://github.com/aspnet/AspNetCore/tree/master/src/SignalR/docs/specs)
+
+> The @css[signalr](SignalR) Protocol is a protocol for two-way RPC over any Message-based transport.
 
 ---
 

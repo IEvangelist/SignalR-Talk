@@ -1,6 +1,6 @@
 :root {
   --signalr: #00abec;
-  --dimmed: rgba(255, 255, 255, .35);
+  --dimmed: rgba(255, 255, 255, .07);
 }
 
 @font-face {
@@ -80,6 +80,67 @@
 .bottom-left { grid-area: bottom-left; }
 .bottom-center { grid-area: bottom-center; }
 
+.tla {
+  color: var(--signalr);
+  position: absolute;
+  left: calc(30%);
+  top: calc(30%);
+  transform: rotate(45deg);
+}
+.tca {
+  z-index: 1;
+  color: var(--signalr);
+  position: absolute;
+  left: calc(45%);
+  top: calc(23%);
+  transform: rotate(90deg);
+  text-shadow: 0 0 10px #000;
+}
+.tra {
+  color: var(--signalr);
+  position: absolute;
+  left: calc(60%);
+  top: calc(30%);
+  transform: rotate(135deg);
+}
+.mla {
+  color: var(--signalr);
+  position: absolute;
+  left: calc(30%);
+  top: calc(47%);
+}
+.mra {
+  color: var(--signalr);
+  position: absolute;
+  left: calc(60%);
+  top: calc(47%);
+}
+.bla {
+  z-index: 1;
+  color: var(--signalr);
+  position: absolute;
+  left: calc(30%);
+  top: calc(65%);
+  transform: rotate(315deg);
+}
+.bca {
+  z-index: 1;
+  color: var(--signalr);
+  position: absolute;
+  left: calc(45%);
+  top: calc(65%);
+  transform: rotate(270deg);
+  text-shadow: 0 0 10px #000;
+}
+.bra {
+  z-index: 1;
+  color: var(--signalr);
+  position: absolute;
+  left: calc(60%);
+  top: calc(65%);
+  transform: rotate(225deg);
+}
+
 .dimmed {
   color: var(--dimmed) !important;
 }
@@ -88,13 +149,21 @@
   background: rgba(0,0,0,0.7) !important;
 }
 
-.blinking {
-  animation: blinkingText 1s linear infinite;
+.blinking > i {
+  animation: blinkingText 1.5s linear infinite;
+}
+
+.sender {
+  animation: none;
+  color: green;
 }
 
 @keyframes blinkingText {
   50% {
     color: var(--dimmed);
+  }
+  100% {
+    filter: brightness(1.25);
   }
 }
 
