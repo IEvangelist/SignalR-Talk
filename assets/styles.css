@@ -513,6 +513,7 @@ img.excited {
   }
 }
 
+html.bg-img-opacity-5 .slide-background.present:not([data-background-hash*="binary-strings-black.jpg"]),
 html.bg-img-opacity-15 .slide-background.present:not([data-background-hash*="binary-strings-black.jpg"]) {
   opacity: 1 !important;
 }
