@@ -1,15 +1,15 @@
 :root {
   --signalr: #00abec;
-  --dimmed: rgba(255, 255, 255, .07);
+  --dimmed: rgba(255, 255, 255, .3);
 }
 
 @font-face {
-  font-family: 'Fira Code';
+  font-family: 'Fira Code', monospace;
   src: url(assets/fonts/firacode.ttf) format('truetype')
 }
 
 .reveal pre code {
-  font-family: 'Fira Code' !important;
+  font-family: 'Fira Code', monospace !important;
 }
 
 .signalr {
@@ -65,6 +65,8 @@
 
 .grid-container {
   display: grid;
+  grid-column-gap: .5rem;
+  grid-row-gap: 1.75rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "top-left top-center top-right" "middle-left middle-center middle-right" "bottom-left bottom-center bottom-right";
@@ -340,7 +342,11 @@ p > span.code-presenting-annotation.fragment.current-only.visible.current-fragme
     max-height: 45vh !important;
   }
 }
-  
+
+.reveal pre > code > .code-hide-opacity {
+  opacity: 0.3 !important;
+}
+
 .reveal .slides section .code-presenting-annotation {
   color: black;
   background: white;

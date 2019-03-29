@@ -2,7 +2,7 @@ theme: night
 highlight: dracula
 eager-loading : true
 background : assets/binary-strings-black.jpg
-background-opacity : 5
+background-opacity : 15
 transition: fade
 logo : assets/signalr-logo.png
 remote-control: true

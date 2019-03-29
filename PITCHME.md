@@ -68,7 +68,7 @@
 
 ### @color[cyan](`Startup`)`.ConfigureServices`
 
-@code[csharp zoom-18](source/cs.cs)
+@code[csharp code-reveal-fast zoom-18](source/cs.cs)
 
 @snap[south span-100]
 @[4-5](Adding the `SignalR` services into `IServiceCollection`.)
@@ -78,7 +78,7 @@
 
 ### @color[cyan](`Startup`)`.Configure`
 
-@code[csharp zoom-16](source/c.cs)
+@code[csharp code-reveal-fast zoom-16](source/c.cs)
 
 @snap[south span-100]
 @[5-9](Mapping the `ChatHub` to the `"/chat"` endpoint.)
@@ -88,7 +88,7 @@
 
 ### ☁️ @color[cyan](`Startup`)`.ConfigureServices`
 
-@code[csharp zoom-18](source/acs.cs)
+@code[csharp code-reveal-fast zoom-18](source/acs.cs)
 
 @snap[south span-100]
 @[4-6](Adding the `SignalR` and `AzureSignalR` services into `IServiceCollection`.)
@@ -98,7 +98,7 @@
 
 ### ☁️ @color[cyan](`Startup`)`.Configure`
 
-@code[csharp zoom-16](source/ac.cs)
+@code[csharp code-reveal-fast zoom-16](source/ac.cs)
 
 @snap[south span-100]
 @[5-9](Mapping the `ChatHub` to the `"/chat"` endpoint.)
@@ -156,7 +156,7 @@
 
 ### @color[cyan](`ChatHub`)`.Broadcast`
 
-@code[csharp zoom-18](source/hubs/sa.cs)
+@code[csharp code-reveal-fast zoom-18](source/hubs/sa.cs)
 
 @snap[south span-100]
 @[4-7](Everyone connected to this `Hub` receives the message)
@@ -178,43 +178,43 @@
   <div class="top-left sender">
     Dave (Sender)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-center">
     Maggie (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-right">
     Carol (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-left">
     Rachel (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-center">
     @css[signalr](__Chat Hub__)
     <br/>
-    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-server signalr" aria-hidden="true"></i>
   </div>
   <div class="middle-right">
     Maria (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Max (DevOps)
   </div>
   <div class="bottom-left">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>... (Bot)
   </div>
   <div class="bottom-center">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Steve (Dev)
   </div>
 </div>
@@ -223,7 +223,7 @@
 
 ### @color[cyan](`ChatHub`)`.Echo`
 
-@code[csharp zoom-18](source/hubs/sc.cs)
+@code[csharp code-reveal-fast zoom-18](source/hubs/sc.cs)
 
 @snap[south span-100]
 @[4-7](Only I get this message, it's an `"echo"`)
@@ -238,43 +238,43 @@
   <div class="top-left sender">
     Dave (Sender)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-center dimmed">
     Maggie (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-right dimmed">
     Carol (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-left dimmed">
     Rachel (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-center">
     @css[signalr](__Chat Hub__)
     <br/>
-    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-server signalr" aria-hidden="true"></i>
   </div>
   <div class="middle-right dimmed">
     Maria (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Max (DevOps)
   </div>
   <div class="bottom-left dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>... (Bot)
   </div>
   <div class="bottom-center dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Steve (Dev)
   </div>
 </div>
@@ -283,7 +283,7 @@
 
 ### @color[cyan](`ChatHub`)`.SendToOthers`
 
-@code[csharp zoom-18](source/hubs/so.cs)
+@code[csharp code-reveal-fast zoom-18](source/hubs/so.cs)
 
 @snap[south span-100]
 @[3-6](Everyone connected to this `Hub` receives the message, except for me)
@@ -305,43 +305,43 @@
   <div class="top-left sender">
     Dave (Sender)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-center">
     Maggie (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-right">
     Carol (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-left">
     Rachel (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-center">
     @css[signalr](__Chat Hub__)
     <br/>
-    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-server signalr" aria-hidden="true"></i>
   </div>
   <div class="middle-right">
     Maria (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Max (DevOps)
   </div>
   <div class="bottom-left">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>... (Bot)
   </div>
   <div class="bottom-center">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Steve (Dev)
   </div>
 </div>
@@ -350,7 +350,7 @@
 
 ### @color[cyan](`ChatHub`)`.SendToGroup`
 
-@code[csharp zoom-18](source/hubs/sg.cs)
+@code[csharp code-reveal-fast zoom-18](source/hubs/sg.cs)
 
 @snap[south span-100]
 @[4-7](Everyone connected to this `Hub` and in this group receives the message)
@@ -367,43 +367,43 @@
   <div class="top-left sender">
     Dave (Sender)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-center">
     Maggie (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-right dimmed">
     Carol (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-left">
     Rachel (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-center">
     @css[signalr](__Chat Hub__)
     <br/>
-    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-server signalr" aria-hidden="true"></i>
   </div>
   <div class="middle-right dimmed">
     Maria (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Max (DevOps)
   </div>
   <div class="bottom-left dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>... (Bot)
   </div>
   <div class="bottom-center dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Steve (Dev)
   </div>
 </div>
@@ -412,7 +412,7 @@
 
 ### @color[cyan](`ChatHub`)`.DirectMessage`
 
-@code[csharp zoom-18](source/hubs/su.cs)
+@code[csharp code-reveal-fast zoom-18](source/hubs/su.cs)
 
 @snap[south span-100]
 @[4-7](This is a direct message to a specific user)
@@ -428,43 +428,43 @@
   <div class="top-left sender">
     Dave (Sender)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-center dimmed">
     Maggie (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="top-right dimmed">
     Carol (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-left dimmed">
     Rachel (UX)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="middle-center">
     @css[signalr](__Chat Hub__)
     <br/>
-    <i class="fa fa-4x fa-server signalr" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-server signalr" aria-hidden="true"></i>
   </div>
   <div class="middle-right">
     Maria (Dev)
     <br/>
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
   </div>
   <div class="bottom-right dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Max (DevOps)
   </div>
   <div class="bottom-left dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>... (Bot)
   </div>
   <div class="bottom-center dimmed">
-    <i class="fa fa-4x fa-user" aria-hidden="true"></i>
+    <i class="fa fa-3x fa-user" aria-hidden="true"></i>
     <br/>Steve (Dev)
   </div>
 </div>
