@@ -1,14 +1,15 @@
 theme: night
-highlight: dracula
+highlight: vs
 eager-loading : true
 background : assets/binary-strings-black.jpg
 background-opacity : 15
 transition: fade
+title: "SignalR: Above & Beyond Chat"
 logo : assets/signalr-logo.png
 remote-control: true
 remote-control-prevkey: 38
 remote-control-nextkey: 40
 theme-override : assets/styles.css
-published: false
+published: true
 code-line-numbers: true
 footnote : "SignalR: Above & Beyond Chat  •   davidpine.net   •   @davidpine7"
