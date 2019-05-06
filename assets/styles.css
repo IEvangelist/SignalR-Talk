@@ -88,6 +88,7 @@
   left: calc(30%);
   top: calc(30%);
   transform: rotate(45deg);
+  animation: blinkingText 1.5s linear infinite;
 }
 .tca {
   z-index: 1;
@@ -97,6 +98,7 @@
   top: calc(23%);
   transform: rotate(90deg);
   text-shadow: 0 0 10px #000;
+  animation: blinkingText 1.5s linear infinite;
 }
 .tra {
   color: var(--signalr);
@@ -104,18 +106,21 @@
   left: calc(60%);
   top: calc(30%);
   transform: rotate(135deg);
+  animation: blinkingText 1.5s linear infinite;
 }
 .mla {
   color: var(--signalr);
   position: absolute;
   left: calc(30%);
   top: calc(47%);
+  animation: blinkingText 1.5s linear infinite;
 }
 .mra {
   color: var(--signalr);
   position: absolute;
   left: calc(60%);
   top: calc(47%);
+  animation: blinkingText 1.5s linear infinite;
 }
 .bla {
   z-index: 1;
@@ -124,6 +129,7 @@
   left: calc(30%);
   top: calc(65%);
   transform: rotate(315deg);
+  animation: blinkingText 1.5s linear infinite;
 }
 .bca {
   z-index: 1;
@@ -133,6 +139,7 @@
   top: calc(65%);
   transform: rotate(270deg);
   text-shadow: 0 0 10px #000;
+  animation: blinkingText 1.5s linear infinite;
 }
 .bra {
   z-index: 1;
@@ -141,6 +148,7 @@
   left: calc(60%);
   top: calc(65%);
   transform: rotate(225deg);
+  animation: blinkingText 1.5s linear infinite;
 }
 
 .dimmed {
@@ -336,7 +344,7 @@ p > span.code-presenting-annotation.fragment.current-only.visible.current-fragme
   border-radius: 10px;
   overflow: hidden !important;
 }
-  
+
 @media (device-width: 100vw) and (device-height: 100vh) {
   .reveal pre code {
     max-height: 45vh !important;

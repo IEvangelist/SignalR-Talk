@@ -66,6 +66,10 @@
 
 ---
 
+# ...take a 👀
+
+---
+
 ### @color[cyan](`Startup`)`.ConfigureServices`
 
 @code[csharp code-reveal-fast zoom-18](source/cs.cs)
@@ -536,7 +540,7 @@
 
 @ul[no-bullets](false)
  - @fa[check] &nbsp; ASP.NET Core + @color[#F44336](Angular)
- - @fa[check] &nbsp; @color[grey](`JSON`) Protocol
+ - @fa[check] &nbsp; @color[grey](`MessagePack`) Protocol
  - @fa[check] &nbsp; Video ASCII Art (pseudo-stream)
  - @fa[check] &nbsp; [bit.ly/signalr-streaming @fa[external-link]](http://bit.ly/signalr-streaming)
 @ulend
