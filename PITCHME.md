@@ -1,24 +1,42 @@
----
-# @color[--signalr](SignalR)
-## Above & Beyond Chat
+---?image=assets/slide-one.png&size=contain&opacity=100
 ---
 
-<img class="me" src="assets/me.png" height="600" />
+<img class="rounded" src="assets/me.png" height="420" />
 
-@snap[south-west]
-[@css[twitter](@fa[twitter]) @davidpine7](https://twitter.com/davidpine7)
+@snap[north span-80]
+@emoji[wave text-14] @css[text-14](Hi, I'm David Pine)
 @snapend
 
-@snap[north-west img-fit]
-![Most Valuable Professional](assets/mvp.png)
+---
+
+<img class="rounded" src="assets/me.png" height="420" />
+
+@snap[south-west]
+[@css[twitter](@fa[twitter]) @davidpine7](https://twitter.com/davidpine7) <br>
+[@color[#f5f5f5](@fab[github]) github.com/IEvangelist](https://github.com/IEvangelist)
+@snapend
+
+@snap[west clear fit]
+<a href="https://fallexperiment.com/creamcitycode" target="_blank">
+    <img  class="clear fit" src="assets/creamcitycode.png" />
+</a>
+@snapend
+
+@snap[north-west clear fit]
+    <img src="assets/mvp.png" />
 @snapend
 
 @snap[south-east]
-[davidpine.net @color[red](@fa[globe])](http://davidpine.net/)
+[davidpine.net @color[red](@fa[globe])](https://davidpine.net/) <br>
+[docs.microsoft.com @color[#008AD7](@fab[microsoft])](https://docs.microsoft.com/azure)
 @snapend
 
-@snap[north-east img-fit]
-![Google Developer Expert](assets/gde.png)
+@snap[east clear fit]
+    <img src="assets/twilio-mark-red.png" />
+@snapend
+
+@snap[north-east clear fit]
+    <img src="assets/gde.png" />
 @snapend
 
 ---
@@ -59,7 +77,7 @@
  - @fa[code] &nbsp; @color[magenta](`JavaScript`) Client (IE 11)
  - @fa[smile-o] &nbsp; @color[cyan](`.NET`) Client (Android & iOS)
  - @fa[coffee] &nbsp; @color[red](`Java`) Client (Java 8 or later)
- - @fa[plus] &nbsp; @color[#004482](`C++`) Targeting 3.0 Release 
+ - @fa[plus] &nbsp; @color[#004482](`C++`) Was targeting 3.0 release 🤷
  - @fa[apple] &nbsp; @color[#FB9D3B](Swift) 3<sup>@size[1.5rem](rd)</sup> Party Implementation
 
 @ulend
@@ -136,8 +154,8 @@
 @ul[no-bullets](false)
  - @fa[check] &nbsp; Razor Pages + @color[#41B883](`VueJS`)
  - @fa[check] &nbsp; @color[grey](`JSON`) Protocol
- - @fa[check] &nbsp; Azure SignalR
- - @fa[check] &nbsp; [bit.ly/signalr-chat @fa[external-link]](https://bit.ly/signalr-chat)
+ - @fa[check] &nbsp; ASP.NET Core + @color[red]("Host Service")
+ - @fa[check] &nbsp; [bit.ly/signalr-chatapp @fa[external-link]](https://bit.ly/signalr-chatapp)
 @ulend
 
 ---?image=assets/hubs.jpg&size=contain
@@ -290,7 +308,7 @@
 @code[csharp code-reveal-fast zoom-18](source/hubs/so.cs)
 
 @snap[south span-100]
-@[3-6](Everyone connected to this `Hub` receives the message, except for me)
+@[4-7](Everyone connected to this `Hub` receives the message, except for me)
 @snapend
 
 ---
@@ -357,7 +375,7 @@
 @code[csharp code-reveal-fast zoom-18](source/hubs/sg.cs)
 
 @snap[south span-100]
-@[4-7](Everyone connected to this `Hub` and in this group receives the message)
+@[4-8](Everyone connected to this `Hub` and in this group receives the message)
 @snapend
 
 ---
@@ -419,7 +437,7 @@
 @code[csharp code-reveal-fast zoom-18](source/hubs/su.cs)
 
 @snap[south span-100]
-@[4-7](This is a direct message to a specific user)
+@[4-8](This is a direct message to a specific user)
 @snapend
 
 ---
@@ -478,8 +496,9 @@
 # Protocols
 
 @ul[no-bullets](false)
- - @fa[file-text-o] &nbsp; [JSON (Text-Based) @fa[external-link]](https://www.newtonsoft.com/json)
- - @fa[file-archive-o] &nbsp; [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
+ - @color[lightblue](@fa[file-text-o]) &nbsp; [JSON (Text-Based) @fa[external-link]](https://www.newtonsoft.com/json)
+ - @color[yellow](@fa[file-archive-o]) &nbsp; [MessagePack (Binary) @fa[external-link]](https://msgpack.org/index.html)
+ - @color[magenta](@fa[user-secret]) &nbsp; [BlazorPack (Binary) @fa[external-link]](https://github.com/aspnet/AspNetCore/blob/36a651e29aa76ed285c7beda4a029ec005af036a/src/Components/Server/src/BlazorPack/BlazorPackHubProtocol.cs)
 @ulend
 
 > The SignalR Protocol is a protocol for two-way RPC over any Message-based transport
@@ -503,6 +522,7 @@
  - @fa[check] &nbsp; ASP.NET Core + @color[magenta](Blazor)
  - @fa[check] &nbsp; @color[grey](`MessagePack`) Protocol
  - @fa[check] &nbsp; @css[twitter](Twitter) Streaming
+ - @fa[check] &nbsp; Azure SignalR
  - @fa[check] &nbsp; [bit.ly/signalr-blazing @fa[external-link]](http://bit.ly/signalr-blazing)
 @ulend
 
@@ -550,20 +570,27 @@
 # Resources
 
 @ul[no-bullets](false)
- - @fa[link] &nbsp; [bit.ly/signalr-chat](https://bit.ly/signalr-chat)
+ - @fa[link] &nbsp; [bit.ly/signalr-chatapp](https://bit.ly/signalr-chatapp)
  - @fa[link] &nbsp; [bit.ly/signalr-blazing](http://bit.ly/signalr-blazing)
  - @fa[link] &nbsp; [bit.ly/signalr-streaming](http://bit.ly/signalr-streaming)
 @ulend
 
 ---
 
-# Thank you
-<img class="me" src="assets/me.png" height="450" />
-<br/>
-@snap[west]
-[@css[twitter](@fa[twitter]) @davidpine7](https://twitter.com/davidpine7)
+<img class="rounded" src="assets/me.png" height="420" />
+
+@snap[south-west]
+[@css[twitter](@fa[twitter]) @davidpine7](https://twitter.com/davidpine7) <br>
+[@color[#f5f5f5](@fab[github]) github.com/IEvangelist](https://github.com/IEvangelist)
 @snapend
 
-@snap[east]
-[davidpine.net @color[red](@fa[globe])](http://davidpine.net/)
+@snap[north]
+@emoji[clap text-14] @css[text-14](Thank You)
 @snapend
+
+@snap[south-east]
+[davidpine.net @color[red](@fa[globe])](https://davidpine.net/) <br>
+[docs.microsoft.com @color[#008AD7](@fab[microsoft])](https://docs.microsoft.com/azure)
+@snapend
+
+---?image=assets/slide-feedback.png&size=contain&opacity=100

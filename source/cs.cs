@@ -1,6 +1,6 @@
 public void ConfigureServices(
-    IServiceCollection services)
+  IServiceCollection services)
 {
-    // 🤘
-    services.AddSignalR();
+  // 🤘
+  services.AddSignalR();
 }

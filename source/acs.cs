@@ -1,7 +1,7 @@
 public void ConfigureServices(
-    IServiceCollection services)
+  IServiceCollection services)
 {
-    // 🤘
-    services.AddSignalR()
-            .AddAzureSignalR();
+  // 🤘
+  services.AddSignalR()
+          .AddAzureSignalR();
 }
