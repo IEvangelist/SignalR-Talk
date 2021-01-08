@@ -1,6 +1,4 @@
----?image=assets/slide-one.png&size=contain&opacity=100
 ---
-
 <img class="rounded" src="assets/me.png" height="420" />
 
 @snap[north span-80]
@@ -16,27 +14,9 @@
 [@color[#f5f5f5](@fab[github]) github.com/IEvangelist](https://github.com/IEvangelist)
 @snapend
 
-@snap[west clear fit]
-<a href="https://fallexperiment.com/creamcitycode" target="_blank">
-    <img  class="clear fit" src="assets/creamcitycode.png" />
-</a>
-@snapend
-
-@snap[north-west clear fit]
-    <img src="assets/mvp.png" />
-@snapend
-
 @snap[south-east]
 [davidpine.net @color[red](@fa[globe])](https://davidpine.net/) <br>
 [docs.microsoft.com @color[#008AD7](@fab[microsoft])](https://docs.microsoft.com/azure)
-@snapend
-
-@snap[east clear fit]
-    <img src="assets/twilio-mark-red.png" />
-@snapend
-
-@snap[north-east clear fit]
-    <img src="assets/gde.png" />
 @snapend
 
 ---
@@ -77,7 +57,7 @@
  - @fa[code] &nbsp; @color[magenta](`JavaScript`) Client (IE 11)
  - @fa[smile-o] &nbsp; @color[cyan](`.NET`) Client (Android & iOS)
  - @fa[coffee] &nbsp; @color[red](`Java`) Client (Java 8 or later)
- - @fa[plus] &nbsp; @color[#004482](`C++`) Was targeting 3.0 release 🤷
+ - @fa[plus] &nbsp; @color[#004482](`C++`) 3<sup>@size[1.5rem](rd)</sup> Party Implementation
  - @fa[apple] &nbsp; @color[#FB9D3B](Swift) 3<sup>@size[1.5rem](rd)</sup> Party Implementation
 
 @ulend
@@ -130,33 +110,11 @@
 
 # Transports
 
- - WebSockets &nbsp; @fa[globe] @fa[wrench]
- - Server-Sent Events &nbsp; @fa[server] @fa[arrow-right] @fa[bolt]
- - Long Polling &nbsp; @fa[long-arrow-right] @fa[list-alt]
+- WebSockets &nbsp; @fa[globe] @fa[wrench]
+- Server-Sent Events &nbsp; @fa[server] @fa[arrow-right] @fa[bolt]
+- Long Polling &nbsp; @fa[long-arrow-right] @fa[list-alt]
 
 > The best transport is automatically chosen based on server and client capabilities.
-
----
-
-@snap[east]
-# @color[white](Demo)
-@snapend
-<div class="logo">
-    <svg viewBox="0 0 275 275" class="signalr-svg"  xmlns="http://www.w3.org/2000/svg">
-        <path d="M135 0a135 135 0 1 0 42.59 263.14l-67-67 13.79-38.59h36.5a22.56 22.56 0 0 0 0-45.12H52.11v-1l55.76-55.75h1V74h52a60.89 60.89 0 0 1 2.93 121.7l49.36 49.37A135 135 0 0 0 135 0z" />
-    </svg>
-</div>
-
----
-
-# Recap
-
-@ul[no-bullets](false)
- - @fa[check] &nbsp; Razor Pages + @color[#41B883](`VueJS`)
- - @fa[check] &nbsp; @color[grey](`JSON`) Protocol
- - @fa[check] &nbsp; ASP.NET Core + @color[red]("Host Service")
- - @fa[check] &nbsp; [bit.ly/signalr-chatapp @fa[external-link]](https://bit.ly/signalr-chatapp)
-@ulend
 
 ---?image=assets/hubs.jpg&size=contain
 
@@ -505,29 +463,6 @@
 
 ---
 
-@snap[east]
-# @color[white](Demo)
-@snapend
-<div class="logo">
-    <svg viewBox="0 0 275 275" class="signalr-svg"  xmlns="http://www.w3.org/2000/svg">
-        <path d="M135 0a135 135 0 1 0 42.59 263.14l-67-67 13.79-38.59h36.5a22.56 22.56 0 0 0 0-45.12H52.11v-1l55.76-55.75h1V74h52a60.89 60.89 0 0 1 2.93 121.7l49.36 49.37A135 135 0 0 0 135 0z" />
-    </svg>
-</div>
-
----
-
-# Recap
-
-@ul[no-bullets](false)
- - @fa[check] &nbsp; ASP.NET Core + @color[magenta](Blazor)
- - @fa[check] &nbsp; @color[grey](`MessagePack`) Protocol
- - @fa[check] &nbsp; @css[twitter](Twitter) Streaming
- - @fa[check] &nbsp; Azure SignalR
- - @fa[check] &nbsp; [bit.ly/signalr-blazing @fa[external-link]](http://bit.ly/signalr-blazing)
-@ulend
-
----
-
 # 😲 Perf
 
 @ul[no-bullets](false)
@@ -556,23 +491,10 @@
 
 ---
 
-# Recap
-
-@ul[no-bullets](false)
- - @fa[check] &nbsp; ASP.NET Core + @color[#F44336](Angular)
- - @fa[check] &nbsp; @color[grey](`MessagePack`) Protocol
- - @fa[check] &nbsp; Video ASCII Art (pseudo-stream)
- - @fa[check] &nbsp; [bit.ly/signalr-streaming @fa[external-link]](http://bit.ly/signalr-streaming)
-@ulend
-
----
-
 # Resources
 
 @ul[no-bullets](false)
  - @fa[link] &nbsp; [bit.ly/signalr-chatapp](https://bit.ly/signalr-chatapp)
- - @fa[link] &nbsp; [bit.ly/signalr-blazing](http://bit.ly/signalr-blazing)
- - @fa[link] &nbsp; [bit.ly/signalr-streaming](http://bit.ly/signalr-streaming)
 @ulend
 
 ---
